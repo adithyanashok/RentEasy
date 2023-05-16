@@ -10,8 +10,12 @@ import Google from '../../images/1298745_google_brand_branding_logo_network_icon
 import Facebook from '../../images/5296499_fb_facebook_facebook logo_icon.svg'
 
 const MainPage = () => {
-  const [age, setAge] = useState("");
 
+  const [age, setAge] = useState("");
+  const [click, setClick] = useState(true);
+  const showHide = () => {
+    setClick(!click)
+  }
   const handleChange = (event) => {
     setAge(event.target.value);
   };
@@ -22,15 +26,17 @@ const MainPage = () => {
         <img src={Image} alt="" className="image" />
       </div>
       <div className="signup-section">
-        <div className="signup-screen">
-          <h1 className="signup-text">
+        <div className={`${click ? "signup-screen" : "login-screen"}`}>
+          {click ? <h1 className="signup-text">
             Signup to RentEasy
-          </h1>
-          <p className="description">
+          </h1> : <h1 className="signup-text">
+            Login to RentEasy
+          </h1>}
+          {click && <p className="description">
             Join Rental you will get best recomentations for rental properties
-          </p>
+          </p>}
           <div className="input-items">
-            <input type="text" placeholder='Name' />
+            {click ? <><input type="text" placeholder='Name' />
             <input type="text" placeholder='Email' />
             <input type="text" placeholder='Phone' />
             <input type="text" placeholder='Password' />
@@ -75,10 +81,12 @@ const MainPage = () => {
               </FormControl>
             </Box>
             </div>
-            <button className="button">
+            </> :<><input type="text" placeholder='Email' />
+            <input type="text" placeholder='Password' /></> }
+            <button className="button" onClick={showHide} >
               CREATE ACCOUNT
             </button>
-            <a href='' className="login-link">Already have an account?</a>
+            <p className="login-link" onClick={showHide} >Already have an account?</p>
             <div className="signin-opt">
               <img src={Google} alt="" className='signin-img' />
               <img src={Facebook} alt="" className='signin-img' />

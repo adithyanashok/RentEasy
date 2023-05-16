@@ -1,0 +1,65 @@
+.editButtons{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-right: 11px;
+}
+.profile-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileImg{
+    height: 200px;
+    width: 200px;
+} 
+.profileDetails{
+    display: flex;
+    justify-content: space-between;
+    gap: 41px;
+    margin-top: 10px;
+}
+.profileItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+
+}
+.underline{
+    width: 90%;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.propertyName{
+    margin-top: 10px;
+    margin-left: 66px;
+}
+.card-section{
+    display: flex;
+    padding: 33px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+.card{
+    width: 256px;
+    height: auto;
+    padding-bottom: 10px;
+    background: #7b0d8a;
+    color: white;
+    border-radius: 35px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.cardImg{
+    width: 256px;
+    height: 328px;
+    left: 42px;
+    top: 202px;
+    border-radius: 35px 35px 0px 0px;
+
+}

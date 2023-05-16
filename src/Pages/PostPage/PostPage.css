@@ -1,0 +1,45 @@
+.post-container{
+    display: flex;
+    padding: 42px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+
+}
+.card{
+    width: 256px;
+    height: auto;
+    padding-bottom: 10px;
+    background: #7b0d8a;
+    color: white;
+    border-radius: 35px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.cardImg{
+    width: 256px;
+    height: 328px;
+    left: 42px;
+    top: 202px;
+    border-radius: 35px 35px 0px 0px;
+
+}
+.name-amount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.houseName{
+    margin-left: 13px;
+
+}
+.housePrice{
+    margin-right: 13px;
+}
+.location{
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    margin-top: 7px;
+}

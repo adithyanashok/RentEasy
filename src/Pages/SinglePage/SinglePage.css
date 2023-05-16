@@ -1,0 +1,108 @@
+.singlePgContainer{
+    display: flex;
+    flex-direction: row;
+}
+.imageSection{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.PrimaryImage {
+    width: 352px;
+    margin-top: 50px;
+    margin-left: 121px;
+    border-radius: 31px;
+}
+.tinyImages{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-left: 120px;
+}
+.SecondaryImg{
+    width: 80px;
+    height: 80px;
+    
+    margin-top: 11px;
+    border-radius: 12px;
+}
+.detailsSections{
+    width: 36%;
+}
+.nameAmount{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 68px;
+}
+.location{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 6px;
+}
+.address{
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1px;
+    
+}
+.ownerSection{
+    margin-top: 41px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px
+}
+.ownerName{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.ownerPhone{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.ownerEmail{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.featureSection{
+    display: flex;
+    flex-direction: row;
+    gap: 7px
+}
+.bedroom-bathroom{
+    margin-top: 12px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    background: grey;
+    border-radius: 11px;
+    align-items: center;
+    width: 125px;
+    height: 29px;
+}
+.select-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 21px;
+}
+.payButton{
+    width: 154px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    height: 48px;
+    background: #B72393;
+    border-radius: 15px;
+}

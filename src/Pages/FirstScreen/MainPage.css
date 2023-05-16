@@ -29,9 +29,26 @@
     align-content: center;
     justify-content: center;
     align-items: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 496px;
     height: 90vh;
+    left: 887px;
+    top: 50px;
+    background: linear-gradient(360deg, #260F5C -4.27%, #191052 -3.63%, #5c0786 100%);
+    border-radius: 37px;
+}
+.login-screen{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 496px;
+    height: 65vh;
     left: 887px;
     top: 50px;
     background: linear-gradient(360deg, #260F5C -4.27%, #191052 -3.63%, #5c0786 100%);
@@ -104,16 +121,16 @@
 }
 .login-link{
     width: 193px;
-height: 19px;
-left: 1039px;
-top: 714px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 19px;
-text-decoration-line: underline;
+    height: 19px;
+    left: 1039px;
+    top: 714px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
 
 color: #FFFFFF;
 }
@@ -126,18 +143,5 @@ color: #FFFFFF;
     width: 64px;
     height: 64px;
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #FFFFFF;
-    opacity: 1; /* Firefox */
-    
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #FFFFFF;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #FFFFFF;
-  }
 
 
